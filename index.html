@@ -14,7 +14,9 @@
     <!--[if gt IE 8]><!-->
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
     <!--<![endif]-->
-    
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+
+
     
         <!--[if lte IE 8]>
             <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
@@ -22,7 +24,30 @@
         <!--[if gt IE 8]><!-->
             <link rel="stylesheet" href="css/layouts/pricing.css">
         <!--<![endif]-->
+        
+        <script language="javascript">
+			function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+	</script>
 </head>
+
+
 <body>
 
 
@@ -33,12 +58,13 @@
  
 <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
     
-   <img style="width: 10%;  display: block; float: left; margin-bottom: -15%;" src="img/common/Shield.png" class="pure-img" id="shield">
+   
     <ul class="pure-menu-list">
+       <img src="img/common/Shield.png" class="pure-img" id="shield">
         <li class="pure-menu-item"><a href="#" class="pure-menu-heading">LET US STAND GUARD</a></li>
                
    		 </ul>
-   		 <a href="#" class="pure-menu-item" style="text-align:right">800-STAY-OUT</a>
+   		 <a href="#" class="pure-menu-item">800-STAY-OUT</a>
    		 
 		
    
@@ -48,9 +74,17 @@
 <img src="img/common/ThinkstockPhotos-513121866_flipped-Cropped.png"  style="width: 100%;"> 
 	
 <div class="l-content dropdown">
-  <div class="pure-u-1 pure-u-md-1-1">
+  <button class="pure-u-1 pure-u-md-1-1 requesttext dropbtn" onClick="myFunction()">
     Request a free quote
-		</div>
+	</button>
+	
+	<div id="myDropdown" class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  
+  
 	</div>
 		
 </div>
@@ -164,7 +198,8 @@
                 </p>
             </div>
         </div>
- <div class="pure-u-md-1-4 contact">
+        
+ <div class="pure-u-1-1 contact">
 		<form class="pure-form pure-form-stacked">
     <fieldset>
         <legend>Request a Free Quote</legend>
@@ -186,7 +221,8 @@
 			</form>       
       <button type="submit" class="pure-button pure-button-primary">Sign in</button>
        
-       </div>
+       
+		</div>
         
     </div> <!-- end information -->
 </div>

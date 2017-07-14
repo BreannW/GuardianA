@@ -5,16 +5,27 @@
 body {
     color: #526066;
 	background-color: #FFD800;
+	font-family: 'PT Sans', sans-serif;
+	
 }
 
 h2, h3 {
     letter-spacing: 0.25em;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
+	font-family: 'PT Sans', sans-serif;
 }
 
 p {
     line-height: 1.6em;
+	font-family: 'PT Sans', sans-serif;
+}
+
+
+#shield {
+	width: 10%;  
+	float: left; 
+	margin-bottom: -20%; margin-right: 20em;
 }
 
 
@@ -37,13 +48,6 @@ p {
 
 
 
-.home-menu .pure-menu-heading {
-    color: white;
-    font-weight: 400;
-    font-size: 300%;
-	letter-spacing: .3em;
-	width: 100%;
-}
 
 .home-menu .pure-menu-selected a {
     color: white;
@@ -61,7 +65,6 @@ p {
 
 .pure-menu-link {
 	padding-top: 8%;
-	font-size: 200%;
 }
 
 .home-menu { 
@@ -116,9 +119,10 @@ height: auto;
 
 .home-menu .pure-menu-heading {
     color: white;
-    font-weight: 400;
-    font-size: 300%;
+    font-weight: 700;
+    font-size: 3.5vw;
 	letter-spacing: .3em;
+	
 	
 }
 
@@ -127,7 +131,7 @@ height: auto;
 }
 
 .home-menu a {
-    color: #6FBEF3;
+    color: white;
 }
 .home-menu li a:hover,
 .home-menu li a:focus {
@@ -138,7 +142,7 @@ height: auto;
 
 .pure-menu-link {
 	padding-top: 8%;
-	font-size: 200%;
+	font-size: 3.5vw;
 }
 
 /*
@@ -274,6 +278,7 @@ max-width: 80%;
 	border-radius: 10px;
 	box-shadow:  0px 0px 7px 2px rgba(0, 0, 0, 0.5)   ;
 	height: 100%;
+	width:auto;
 }
 
 .pure-form {
@@ -291,7 +296,44 @@ padding: 2em;
 
 
 
+.pure-menu-horizontal {
+	white-space: normal !important;
+}
 
+.pure-menu-item {
+	color: white;
+    font-weight: 400;
+    font-size: 2vw;
+
+	text-decoration: none;
+	line-height: 1em;
+}
+
+
+.dropdown {
+	display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    
+    border: none;
+    cursor: pointer;
+}
+	.show {
+		display: block;
+}
 /*
  * -- TABLET MEDIA QUERIES --
  * On tablets, we want to slightly adjust the size of the banner
@@ -334,16 +376,21 @@ padding: 2em;
 	display: none;
 	}
 	
-	.dropdown{
-		display: block;
-		
+	.dropdown {
+	display: block;	
 	background-color: white;
-	margin-top: -4px;
+	margin-top: -5px;
 	text-align: center;
-	height: 3em; 
+	padding: 10px;
+	height:auto; 
+	font-size: 4vw;
+	color: black;
+		font-weight: 700;
 	}
+
 	
-	.pure-menu {
+	
+	/*.pure-menu {
 		width: 760px;
 		height: 100px;
 	}
@@ -351,7 +398,7 @@ padding: 2em;
 		font-size: 190%;
 		padding-right: 10px;
 		vertical-align: middle;
-	}
+	} */ 
 	
 	
 }
