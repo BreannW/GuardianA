@@ -4,6 +4,7 @@
  */
 body {
     color: #526066;
+	background-color: #FFD800;
 }
 
 h2, h3 {
@@ -34,27 +35,14 @@ p {
  * I want to customize how my .pure-menu looks at the top of the page
  */
 
-.home-menu {
-    padding: 0.5em;
-    text-align: center;
-    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
-}
-.home-menu {
-    background: #000000;
-	opacity: .9}
 
-.pure-menu.pure-menu-fixed {
-    /* Fixed menus normally have a border at the bottom. */
-    border-bottom: none;
-    /* I need a higher z-index here because of the scroll-over effect. */
-    z-index: 1;
-}
 
 .home-menu .pure-menu-heading {
     color: white;
     font-weight: 400;
     font-size: 300%;
 	letter-spacing: .3em;
+	width: 100%;
 }
 
 .home-menu .pure-menu-selected a {
@@ -76,19 +64,13 @@ p {
 	font-size: 200%;
 }
 
-
-/*
- * -- BANNER --
- * The top banner with the headings. By using a combination
- * of `display: table;` and `display: table-cell;`, we can
- * vertically center the text.
- */
+.home-menu { 
+width: 100%;
+height: auto;
+}
 
 .banner {
-    /* background: transparent url('../../img/common/ThinkstockPhotos-513121866_flipped-Cropped.png') 0 0 no-repeat fixed; */ 
-	background-origin: 0px;
-   
-    background-size: 100%, auto;
+
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale');
 
     height: auto;
@@ -109,6 +91,56 @@ p {
 
 
 
+
+
+
+/*
+ * -- MENU STYLES --
+ * I want to customize how my .pure-menu looks at the top of the page
+ */
+
+.home-menu {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+.home-menu {
+    background: #000000;
+}
+.pure-menu.pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4;
+}
+
+.home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 300%;
+	letter-spacing: .3em;
+	
+}
+
+.home-menu .pure-menu-selected a {
+    color: white;
+}
+
+.home-menu a {
+    color: #6FBEF3;
+}
+.home-menu li a:hover,
+.home-menu li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+}
+
+.pure-menu-link {
+	padding-top: 8%;
+	font-size: 200%;
+}
+
 /*
  * -- PRICING TABLE WRAPPER --
  * This element wraps up all the pricing table elements
@@ -117,10 +149,11 @@ p {
  .information {
 max-width: 80%;
     margin:  auto;
+	 
+	 
  }
 .pricing-tables {
     margin-bottom: 3.125em;
-    text-align: center;
 }
 
 /*
@@ -259,7 +292,6 @@ padding: 2em;
 
 
 
-
 /*
  * -- TABLET MEDIA QUERIES --
  * On tablets, we want to slightly adjust the size of the banner
@@ -269,12 +301,15 @@ padding: 2em;
 
     .banner-head {
         font-size: 4em;
+			
+
     }
     .pricing-table {
         margin-bottom: 0;
     }
-
+	
 }
+
 
 /*
  * -- PHONE MEDIA QUERIES --
@@ -284,6 +319,7 @@ padding: 2em;
   
     .banner-head {
         font-size: 3em;
+		width: 480px;
     }
 	
 }
@@ -297,4 +333,25 @@ padding: 2em;
 	.pure-form { 
 	display: none;
 	}
+	
+	.dropdown{
+		display: block;
+		
+	background-color: white;
+	margin-top: -4px;
+	text-align: center;
+	height: 3em; 
+	}
+	
+	.pure-menu {
+		width: 760px;
+		height: 100px;
+	}
+	.home-menu .pure-menu-heading {
+		font-size: 190%;
+		padding-right: 10px;
+		vertical-align: middle;
+	}
+	
+	
 }
