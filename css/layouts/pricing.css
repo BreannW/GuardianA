@@ -6,7 +6,7 @@ body {
     color: #526066;
 	background-color: #FFD800;
 	font-family: 'PT Sans', sans-serif;
-	
+
 }
 
 h2, h3 {
@@ -23,8 +23,8 @@ p {
 
 
 #shield {
-	width: 10%;  
-	float: left; 
+	width: 10%;
+	float: left;
 	margin-bottom: -20%; margin-right: 20em;
 }
 
@@ -67,7 +67,7 @@ p {
 	padding-top: 8%;
 }
 
-.home-menu { 
+.home-menu {
 width: 100%;
 height: auto;
 }
@@ -122,8 +122,8 @@ height: auto;
     font-weight: 700;
     font-size: 3.5vw;
 	letter-spacing: .3em;
-	
-	
+
+
 }
 
 .home-menu .pure-menu-selected a {
@@ -153,8 +153,8 @@ height: auto;
  .information {
 max-width: 80%;
     margin:  auto;
-	 
-	 
+
+
  }
 .pricing-tables {
     margin-bottom: 3.125em;
@@ -278,19 +278,21 @@ max-width: 80%;
 	border-radius: 10px;
 	box-shadow:  0px 0px 7px 2px rgba(0, 0, 0, 0.5)   ;
 	height: 100%;
-	width:auto;
+  float: right;
+
+
 }
 
 .pure-form {
 padding: 2em;
-	padding-bottom: 0em;
+padding-bottom: 0em;
 }
 
 .pure-button {
 	width: 100%;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	
+
 }
 
 
@@ -316,7 +318,7 @@ padding: 2em;
 
 .dropdown-content {
     display: none;
-    position: absolute;
+
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -327,13 +329,52 @@ padding: 2em;
 .dropbtn {
     background-color: white;
     color: black;
-    
+
     border: none;
     cursor: pointer;
 }
 	.show {
 		display: block;
 }
+
+legend {
+	padding-top: 8%;
+	font-size: 2vw;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+}
+
+label {
+  padding-top: 5%;
+}
+
+
+.weirdcolumn {
+  height: 0px;
+}
+
+.pure-form input[type="text"],
+.pure-form input[type="password"],
+.pure-form input[type="email"],
+.pure-form input[type="url"],
+.pure-form input[type="date"],
+.pure-form input[type="month"],
+.pure-form input[type="time"],
+.pure-form input[type="datetime"],
+.pure-form input[type="datetime-local"],
+.pure-form input[type="week"],
+.pure-form input[type="number"],
+.pure-form input[type="search"],
+.pure-form input[type="tel"],
+.pure-form input[type="color"],
+.pure-form select,
+.pure-form textarea  {
+  display: block;
+}
+
 /*
  * -- TABLET MEDIA QUERIES --
  * On tablets, we want to slightly adjust the size of the banner
@@ -343,13 +384,13 @@ padding: 2em;
 
     .banner-head {
         font-size: 4em;
-			
+
 
     }
     .pricing-table {
         margin-bottom: 0;
     }
-	
+
 }
 
 
@@ -358,38 +399,38 @@ padding: 2em;
  * On phones, we want to reduce the height and font-size of the banner further
  */
 @media (min-width: 480px) {
-  
+
     .banner-head {
         font-size: 3em;
 		width: 480px;
     }
-	
+
 }
 
 
-@media (max-width: 760px) {
-	.contact { 
+@media (max-width: 800px) {
+	.contact {
 	display: none;
 	}
-	
-	.pure-form { 
+
+	.pure-form {
 	display: none;
 	}
-	
+
 	.dropdown {
-	display: block;	
+	display: block;
 	background-color: white;
 	margin-top: -5px;
 	text-align: center;
 	padding: 10px;
-	height:auto; 
+	height:auto;
 	font-size: 4vw;
 	color: black;
-		font-weight: 700;
+	font-weight: 700;
 	}
 
-	
-	
+
+
 	/*.pure-menu {
 		width: 760px;
 		height: 100px;
@@ -398,7 +439,7 @@ padding: 2em;
 		font-size: 190%;
 		padding-right: 10px;
 		vertical-align: middle;
-	} */ 
-	
-	
+	} */
+
+
 }
